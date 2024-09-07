@@ -38,6 +38,26 @@
 
 ---
 
+## Database Setup (MongoDB)
+
+### Steps:
+1. **Install MongoDB**:
+   - If you don't have MongoDB installed, refer to the [MongoDB installation guide](https://www.mongodb.com/docs/manual/installation/).
+   
+2. **Set up your MongoDB connection**:
+   - In the `.env` file, add your MongoDB connection string:
+   ```env
+   MONGO_URI=mongodb://<username>:<password>@localhost:27017/<database-name>
+   ```
+
+3. **Make sure MongoDB is running**:
+   - Run the MongoDB server locally by executing:
+   ```bash
+   mongod
+   ```
+
+---
+
 ## Additional Notes:
 - Ensure **Node.js** and **npm** are installed on your system.
 - If you haven't installed **Expo CLI** globally, run the following command:
@@ -45,5 +65,6 @@
    npm install -g expo-cli
    ```
 - Keep the backend running while developing to ensure the API works with the frontend.
+- Ensure that MongoDB is running and properly connected for the backend to function.
 
 ---
